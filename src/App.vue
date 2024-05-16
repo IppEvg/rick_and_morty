@@ -1,6 +1,7 @@
 <script>
-import HeaderComp from '@/components/Header.vue';
+import HeaderComp from '@/components/Header.vue'
 import MainComp from '@/components/Main.vue'
+
 export default {
   components: {HeaderComp,MainComp}
 }
@@ -9,7 +10,7 @@ export default {
 <template>
   <HeaderComp></HeaderComp>
   <MainComp></MainComp>
-  <v-pagination :length="6"></v-pagination>
+  
 </template>
 
 <style>
@@ -19,6 +20,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>
