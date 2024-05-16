@@ -1,18 +1,16 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HeaderComp from '@/components/Header.vue';
+import MainComp from '@/components/Main.vue'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {HeaderComp,MainComp}
 }
 </script>
+
+<template>
+  <HeaderComp></HeaderComp>
+  <MainComp></MainComp>
+  <v-pagination :length="6"></v-pagination>
+</template>
 
 <style>
 #app {
