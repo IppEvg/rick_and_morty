@@ -1,16 +1,18 @@
 <script>
 import HeaderComp from '@/components/Header.vue'
 import MainComp from '@/components/Main.vue'
-
+import FooterMod from '@/components/Footer.vue'
 export default {
-  components: {HeaderComp,MainComp}
+  components: {HeaderComp,MainComp,FooterMod}
 }
 </script>
 
 <template>
-  <HeaderComp></HeaderComp>
-  <MainComp></MainComp>
-  
+   <v-app>
+     <HeaderComp></HeaderComp>
+     <MainComp></MainComp>
+     <FooterMod></FooterMod>
+   </v-app>
 </template>
 
 <style>

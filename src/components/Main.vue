@@ -60,7 +60,6 @@ export default {
             } else {
                 characters.value = [];
             }
-            console.log(data);
         }
         const handleSubmitForm = (values) => {
             nameInput.value = values.inputValueName;
@@ -118,6 +117,7 @@ export default {
 $base-color: white;
 .section {
     background: rgb(39, 43, 51);
+    padding-bottom: 20px;
 }
 
 .wrapper {
